@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Hero from '$lib/hero/Hero.svelte';
+	import AboutMe from '$lib/aboutMe/AboutMe.svelte';
 </script>
 
 <svelte:head>
@@ -7,3 +8,4 @@
 </svelte:head>
 
 <Hero />
+<AboutMe />
