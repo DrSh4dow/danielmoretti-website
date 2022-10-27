@@ -1,6 +1,12 @@
 {
 	"name": "daniel-moretti-portfolio",
 	"version": "0.0.1",
+	"author": {
+		"name": "Daniel Moretti",
+		"email": "daniel.morettiv@gmail.com",
+		"url": "https://danielmoretti.com"
+	},
+	"license": "GPL-3.0-only",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
