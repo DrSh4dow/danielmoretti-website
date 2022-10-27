@@ -3,7 +3,7 @@ export function scrollToSection(sectionId: string) {
 	if (!elem) return;
 
 	const elemPosition = elem.getBoundingClientRect().top;
-	const offSetPosition = elemPosition + window.pageYOffset - 72;
+	const offSetPosition = elemPosition + window.pageYOffset - 240;
 
 	window.scrollTo({
 		top: offSetPosition,

@@ -19,7 +19,7 @@
 	loop();
 </script>
 
-<div class="grid h-screen min-h-[720px] items-center ">
+<section class="grid h-screen min-h-[720px] items-center ">
 	<div
 		class="absolute top-0 -z-10 hidden h-screen w-screen backdrop-blur-2xl lg:-left-10 lg:block"
 	/>
@@ -75,4 +75,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>

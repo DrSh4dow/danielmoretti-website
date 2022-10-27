@@ -1,24 +1,48 @@
-<div class="mt-40 flex flex-wrap">
+<script lang="ts">
+	import Me from './me.png';
+</script>
+
+<section
+	class="my-20 grid grid-cols-1 justify-between gap-10 sm:my-40 md:grid-cols-2  lg:mb-60"
+	id="about-me-section"
+>
 	<div>
-		<div class="mb-10 flex items-center">
-			<h2 class=" whitespace-nowrap pr-6 font-inter text-2xl font-bold">About Me</h2>
+		<div class="mb-10 flex  items-center sm:mb-14">
+			<h2 class=" whitespace-nowrap pr-6 font-inter text-3xl font-bold sm:text-5xl">About Me</h2>
 			<div class="h-px w-full bg-sky-500" />
 		</div>
-		<p class="text-justify text-sm text-slate-200">
+		<p class="text-justify text-base text-slate-200 sm:text-xl">
 			I'm Daniel, a Full-Stack Software Developer passionate about Open-Source, Linux and Music 🎜. I
 			believe that through the creation of apps, we deliver experiences that empower users to change
 			how they interact with their lives, so by the same principle, I want to deliver the bests
 			experiences I can give.
 		</p>
-		<p class="py-4 text-justify text-sm text-slate-200">
+		<p class="py-4 text-justify text-base text-slate-200 sm:text-xl">
 			My journey as a Developer began in 2015 when I was trying to start a little business; back
 			then, we needed a website and had no knowledge of creating one. Sure, we could make use of
 			some developer-free tooling, but Nah, I wanted to make something highly customizable to fit in
 			perfection the idea we had, so I started learning HTML, CSS, and JavaScript.
 		</p>
-		<p class="text-justify text-sm text-slate-200">
+		<p class="text-justify text-base text-slate-200 sm:text-xl">
 			Little did I know that from that day on, I would fall in love and keep digging into a
 			neverending hole of knowledge and challenges.
 		</p>
 	</div>
-</div>
+	<div class="flex items-start justify-center md:justify-end md:pt-28">
+		<figure class="group relative w-60 p-4 transition-transform hover:scale-95 sm:w-96 sm:p-6">
+			<div class="absolute top-0 right-0">
+				<div class="w-14 border-t border-sky-500 sm:w-24" />
+				<div class="h-14 border-r border-sky-500 sm:h-24" />
+			</div>
+			<img
+				class="rounded-lg shadow-sm transition-transform group-hover:scale-110 "
+				src={Me}
+				alt="Daniel Moretti"
+			/>
+			<div class="absolute bottom-0 left-0">
+				<div class="h-14 border-l border-sky-500 sm:h-24" />
+				<div class="w-14 border-b border-sky-500 sm:w-24" />
+			</div>
+		</figure>
+	</div>
+</section>
