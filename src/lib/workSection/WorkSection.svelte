@@ -1,29 +1,38 @@
 <script lang="ts">
-	import Button from '$lib/button/Button.svelte';
+	import CaseStudyCard from './CaseStudyCard.svelte';
 	import OdontologiaChacon from './odontologiachacon.png';
+	import DarSpa from './darspa.png';
+	import EFicha from './eficha.png';
+	import OdontoFicha from './odontoficha.png';
 </script>
 
-<section>
-	<div class="mb-10 flex items-center justify-end sm:mb-14">
+<section class="mb-28 md:mb-40 lg:mb-60">
+	<div class="mb-10 flex items-center justify-end sm:mb-14 lg:mb-20">
 		<div class="h-px w-full bg-sky-500 md:max-w-xs" />
-		<h2 class=" whitespace-nowrap pl-6 font-inter text-3xl font-bold sm:text-5xl">
+		<h2 class="whitespace-nowrap pl-6 font-inter text-3xl font-bold sm:text-5xl">
 			Some of My Work
 		</h2>
 	</div>
-	<div class="flex justify-center gap-6 ">
-		<article class="rounded-2xl bg-slate-800 p-4 sm:p-6">
-			<img
-				class="mb-4 rounded-lg sm:mb-6"
-				src={OdontologiaChacon}
-				alt="Landing page from odontologiabelenchacon.cl"
-			/>
-			<h3 class="mb-1 font-inter text-base font-bold sm:mb-3 sm:text-xl">
-				Website | Odontología Chacón
-			</h3>
-			<p class="mb-6 text-sm text-slate-200 sm:mb-10 sm:text-base">
-				TypeScript | SvelteKit | Vercel
-			</p>
-			<Button>Case Study</Button>
-		</article>
+	<div class="flex flex-wrap justify-center gap-6">
+		<CaseStudyCard
+			src={OdontologiaChacon}
+			techStack="TypeScript | SvelteKit | Vercel"
+			title="Website | Odontología Chacón"
+		/>
+		<CaseStudyCard
+			src={DarSpa}
+			techStack="JavaScript | Svelte | Node | Firebase"
+			title="Website | Dar Spa"
+		/>
+		<CaseStudyCard
+			src={EFicha}
+			techStack="TypeScript | React | Google Cloud"
+			title="Web Application | E-Ficha"
+		/>
+		<CaseStudyCard
+			src={OdontoFicha}
+			techStack="C++ | Qt6 | QML"
+			title="Desktop Application | Odontoficha"
+		/>
 	</div>
 </section>
