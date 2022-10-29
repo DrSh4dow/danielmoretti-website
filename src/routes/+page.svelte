@@ -2,7 +2,8 @@
 	import Hero from '$lib/hero/Hero.svelte';
 	import AboutMe from '$lib/aboutMe/AboutMe.svelte';
 	import WorkSection from '$lib/workSection/WorkSection.svelte';
-	import ExperienceSection from '$lib/ExperienceSection/ExperienceSection.svelte';
+	import ExperienceSection from '$lib/experienceSection/ExperienceSection.svelte';
+	import Footer from '$lib/footer/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -13,3 +14,4 @@
 <AboutMe />
 <WorkSection />
 <ExperienceSection />
+<Footer />

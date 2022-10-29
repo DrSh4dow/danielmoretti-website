@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Me from './me.png';
+	import Music from './music.svg';
 </script>
 
 <section
@@ -12,10 +13,10 @@
 			<div class="h-px w-full bg-sky-500" />
 		</div>
 		<p class="text-justify text-base text-slate-200 sm:text-xl">
-			I'm Daniel, a Full-Stack Software Developer passionate about Open-Source, Linux and Music 🎜. I
-			believe that through the creation of apps, we deliver experiences that empower users to change
-			how they interact with their lives, so by the same principle, I want to deliver the bests
-			experiences I can give.
+			I'm Daniel, a Full-Stack Software Developer passionate about Open-Source, Linux and Music
+			&#9835;. I believe that through the creation of apps, we deliver experiences that empower
+			users to change how they interact with their lives, so by the same principle, I want to
+			deliver the bests experiences I can give.
 		</p>
 		<p class="py-4 text-justify text-base text-slate-200 sm:text-xl">
 			My journey as a Developer began in 2015 when I was trying to start a little business; back
