@@ -35,17 +35,22 @@
 >
 	<div class="flex items-center justify-start">
 		<svg
-			width="13"
-			height="13"
-			class="mr-2"
-			viewBox="0 0 13 13"
-			fill="none"
+			class=" mr-2 h-3 fill-slate-50 antialiased"
+			viewBox="0 0 100 100"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<path
-				d="M6.2 12.256C5.72 12.256 5.352 12.128 5.096 11.872C4.84 11.6 4.712 11.224 4.712 10.744V7.528H1.568C1.104 7.528 0.744 7.408 0.488 7.168C0.248 6.928 0.128 6.576 0.128 6.112C0.128 5.648 0.248 5.296 0.488 5.056C0.744 4.816 1.104 4.696 1.568 4.696H4.712V1.6C4.712 1.12 4.84 0.752 5.096 0.495999C5.352 0.24 5.728 0.112 6.224 0.112C6.704 0.112 7.064 0.24 7.304 0.495999C7.56 0.752 7.688 1.12 7.688 1.6V4.696H10.832C11.296 4.696 11.648 4.816 11.888 5.056C12.144 5.296 12.272 5.648 12.272 6.112C12.272 6.576 12.144 6.928 11.888 7.168C11.648 7.408 11.296 7.528 10.832 7.528H7.688V10.744C7.688 11.224 7.56 11.6 7.304 11.872C7.064 12.128 6.696 12.256 6.2 12.256Z"
-				fill="#F8FAFC"
+			<rect
+				class="custom-rotation-object transition-transform ease-in-out {isExpanded
+					? 'rotate-90'
+					: 'rotate-0'}"
+				x="38"
+				y="0"
+				ry="15"
+				rx="10"
+				width="25"
+				height="100"
 			/>
+			<rect x="0" y="37" ry="10" rx="15" width="100" height="25" />
 		</svg>
 		<h3 class="whitespace-nowrap text-lg font-bold sm:text-xl ">{title} {company}</h3>
 	</div>
@@ -69,5 +74,10 @@
 <style>
 	ul {
 		list-style-type: '>';
+	}
+
+	.custom-rotation-object {
+		transform-box: fill-box;
+		transform-origin: center;
 	}
 </style>

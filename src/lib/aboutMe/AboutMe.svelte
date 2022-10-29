@@ -1,9 +1,22 @@
 <script lang="ts">
 	import Me from './me.png';
-	import Music from './music.svg';
+	import { inview } from '$lib/util/inview';
+	import type { Options, ObserverEventDetails } from '$lib/types';
+	let isInView = false;
+	const options: Options = {
+		rootMargin: '-80px',
+		unobserveOnEnter: true
+	};
+
+	function handleChange({ detail }: CustomEvent<ObserverEventDetails>) {
+		isInView = detail.inView;
+		console.log(isInView);
+	}
 </script>
 
 <section
+	use:inview={options}
+	on:change={handleChange}
 	class="my-20 grid grid-cols-1 justify-between gap-10 sm:my-40 md:grid-cols-2  lg:mb-60"
 	id="about-me-section"
 >
