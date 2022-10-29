@@ -1,13 +1,37 @@
 <script lang="ts">
+	import { slide } from 'svelte/transition';
+	import { activeNumber } from '$lib/stores';
+
 	export let title = '';
 	export let company = '';
 	export let since = '';
 	export let until = '';
 	export let isExpanded = false;
+	export let id = 0;
+	export let keypoints = [''];
+	export let techStack = '';
+
+	activeNumber.subscribe((val) => {
+		if (!val || val !== id) {
+			isExpanded = false;
+		} else {
+			isExpanded = true;
+		}
+	});
+
+	function handleClick() {
+		if (!isExpanded) {
+			activeNumber.set(id);
+		} else {
+			activeNumber.set(null);
+		}
+	}
 </script>
 
+<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-	class="mx-auto my-2 flex max-w-2xl cursor-pointer items-center justify-between rounded-lg bg-sky-700 px-6 py-4"
+	on:click={handleClick}
+	class="mx-auto mb-2 flex max-w-2xl cursor-pointer items-center justify-between rounded-lg bg-sky-700 px-2 py-4 sm:px-6"
 >
 	<div class="flex items-center justify-start">
 		<svg
@@ -23,7 +47,27 @@
 				fill="#F8FAFC"
 			/>
 		</svg>
-		<h3 class="whitespace-nowrap text-lg font-bold sm:text-xl ">{title} @ {company}</h3>
+		<h3 class="whitespace-nowrap text-lg font-bold sm:text-xl ">{title} {company}</h3>
 	</div>
 	<h3 class="hidden whitespace-nowrap text-xl font-bold sm:inline sm:text-xl">{since} - {until}</h3>
 </div>
+
+{#if isExpanded}
+	<div
+		transition:slide
+		class="mx-auto mb-2 max-w-2xl rounded-lg border border-sky-500 py-4 px-4 sm:px-8"
+	>
+		<ul class="mb-4 list-outside text-base font-bold sm:text-lg md:text-xl">
+			{#each keypoints as point}
+				<li class="mb-2">&nbsp;{point}</li>
+			{/each}
+		</ul>
+		<h4 class="text-base font-bold text-slate-200/75 sm:text-lg md:text-xl">{techStack}</h4>
+	</div>
+{/if}
+
+<style>
+	ul {
+		list-style-type: '>';
+	}
+</style>
