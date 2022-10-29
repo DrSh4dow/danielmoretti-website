@@ -36,7 +36,7 @@
 	loop();
 
 	$: if (isInView) {
-		setTimeout(() => radius.set(5.5), 1500);
+		setTimeout(() => radius.set(5.5), 1300);
 	}
 </script>
 
@@ -53,7 +53,7 @@
 			class="absolute -top-96 left-0 -z-20 hidden h-[800px] w-96 -rotate-[30deg] rounded-full bg-gradient-radial lg:inline"
 		/>
 		<div
-			class="absolute top-0 right-0 hidden transition-all delay-1000 duration-700 lg:block
+			class="absolute top-0 right-0 hidden transition-all delay-700 duration-700 lg:block
 	   		{isInView ? 'translate-x-0 opacity-100 blur-0' : '-translate-x-10 opacity-0 blur-md'}"
 		>
 			<div class="w-64 border-t border-sky-500" />
@@ -67,7 +67,7 @@
 					Daniel Moretti
 				</h1>
 				<h4
-					class="mb-6 text-left text-base font-bold text-slate-200/75 transition-all delay-75 duration-700 sm:text-xl md:mb-20 md:text-2xl lg:mb-24 lg:text-right lg:text-3xl
+					class="mb-6 text-left text-base font-bold text-slate-200/75 transition-all duration-700 sm:text-xl md:mb-20 md:text-2xl lg:mb-24 lg:text-right lg:text-3xl
 					{isInView ? 'translate-x-0 opacity-100 blur-0' : 'translate-x-10 opacity-0 blur-md'}"
 				>
 					"Building <span class="text-sky-400/75">Experiences</span> is much more <br />
@@ -93,7 +93,7 @@
 			>
 				{#if isInView}
 					<rect
-						transition:draw={{ duration: 1500, delay: 700, easing: quintOut }}
+						transition:draw={{ duration: 1500, delay: 500, easing: quintOut }}
 						x="0.5"
 						y="0.5"
 						width="31"
@@ -106,7 +106,7 @@
 			</svg>
 		</div>
 		<div
-			class="absolute bottom-0 left-0 hidden transition-all delay-700 duration-700 lg:block
+			class="absolute bottom-0 left-0 hidden transition-all delay-500 duration-700 lg:block
 	   		{isInView ? 'translate-x-0 opacity-100 blur-0' : 'translate-x-10 opacity-0 blur-md'}"
 		>
 			<div class="h-60 border-l border-sky-500" />
