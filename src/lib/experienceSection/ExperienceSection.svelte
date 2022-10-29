@@ -1,8 +1,25 @@
 <script lang="ts">
 	import WorkSlot from './WorkSlot.svelte';
+	import { inview } from '$lib/util/inview';
+	import type { Options, ObserverEventDetails } from '$lib/types';
+
+	let isInView = false;
+	const options: Options = {
+		rootMargin: '-80px',
+		unobserveOnEnter: true
+	};
+
+	function handleChange({ detail }: CustomEvent<ObserverEventDetails>) {
+		isInView = detail.inView;
+	}
 </script>
 
-<section class="mb-28 md:mb-40 lg:mb-60">
+<section
+	use:inview={options}
+	on:change={handleChange}
+	class="mb-28 transition-all delay-75 duration-700 md:mb-40 lg:mb-60
+	{isInView ? 'translate-x-0 translate-y-0 opacity-100 blur-0' : 'translate-y-10 opacity-0 blur-md'} "
+>
 	<div class="mb-12 flex items-center justify-center sm:mb-14 lg:mb-20 lg:px-6">
 		<div class="h-px w-full bg-sky-500" />
 		<h2 class="whitespace-nowrap px-6 font-inter text-3xl font-bold sm:text-5xl">

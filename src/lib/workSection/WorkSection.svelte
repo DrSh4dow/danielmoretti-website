@@ -4,9 +4,25 @@
 	import DarSpa from './darspa.png';
 	import EFicha from './eficha.png';
 	import OdontoFicha from './odontoficha.png';
+	import { inview } from '$lib/util/inview';
+	import type { Options, ObserverEventDetails } from '$lib/types';
+	let isInView = false;
+	const options: Options = {
+		rootMargin: '-80px',
+		unobserveOnEnter: true
+	};
+
+	function handleChange({ detail }: CustomEvent<ObserverEventDetails>) {
+		isInView = detail.inView;
+	}
 </script>
 
-<section class="mb-28 md:mb-40 lg:mb-60">
+<section
+	use:inview={options}
+	on:change={handleChange}
+	class="mb-28 transition-all delay-75 duration-700 md:mb-40 lg:mb-60 
+	{isInView ? 'translate-x-0 opacity-100 blur-0' : '-translate-x-10 opacity-0 blur-md'}"
+>
 	<div class="mb-10 flex items-center justify-end sm:mb-14 lg:mb-20">
 		<div class="h-px w-full bg-sky-500 md:max-w-xs" />
 		<h2 class="whitespace-nowrap pl-6 font-inter text-3xl font-bold sm:text-5xl">
