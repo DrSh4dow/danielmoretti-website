@@ -31,7 +31,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
 	on:click={handleClick}
-	class="mx-auto mb-2 flex max-w-2xl cursor-pointer items-center justify-between rounded-lg bg-sky-700 px-2 py-4 sm:px-6"
+	class="mx-auto mb-2 flex max-w-2xl cursor-pointer items-center justify-between rounded-lg bg-sky-600 px-2 py-4 sm:px-6"
 >
 	<div class="flex items-center justify-start">
 		<svg

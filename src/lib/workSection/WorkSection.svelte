@@ -1,6 +1,7 @@
 <script lang="ts">
 	import CaseStudyCard from './CaseStudyCard.svelte';
 	import OdontologiaChacon from './odontologiachacon.png';
+	import BelenLogo from './BelenLogo.svelte';
 	import DarSpa from './darspa.png';
 	import EFicha from './eficha.png';
 	import OdontoFicha from './odontoficha.png';
@@ -29,26 +30,17 @@
 			Some of My Work
 		</h2>
 	</div>
-	<div class="flex flex-wrap justify-center gap-6">
-		<CaseStudyCard
-			src={OdontologiaChacon}
-			techStack="TypeScript | SvelteKit | Vercel"
-			title="Website | Odontología Chacón"
-		/>
-		<CaseStudyCard
-			src={DarSpa}
-			techStack="JavaScript | Svelte | Node | Firebase"
-			title="Website | Dar Spa"
-		/>
-		<CaseStudyCard
-			src={EFicha}
-			techStack="TypeScript | React | Google Cloud"
-			title="Web Application | E-Ficha"
-		/>
-		<CaseStudyCard
-			src={OdontoFicha}
-			techStack="C++ | Qt6 | QML"
-			title="Desktop Application | Odontoficha"
-		/>
+	<div class="flex flex-wrap justify-center gap-10">
+		<article class="max-w-5xl">
+			<div class="relative max-h-[360px] overflow-hidden rounded-2xl shadow-md">
+				<div
+					class="absolute top-0 left-0 flex h-full w-full items-center justify-center bg-indigo-500/90"
+				>
+					<BelenLogo />
+				</div>
+				<img src={OdontologiaChacon} alt="test" />
+			</div>
+			<div />
+		</article>
 	</div>
 </section>
