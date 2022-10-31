@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { slide } from 'svelte/transition';
 	import { horizontalSlide } from '$lib/util/horizontalSlide';
-	import { quintOut } from 'svelte/easing';
 
 	let condition = false;
 </script>
