@@ -1,11 +1,7 @@
 <script lang="ts">
-	import OdontologiaChacon from './odontologiachacon.png';
 	import BelenLogo from './belen-logo.svg';
-	import DarSpa from './darspa.png';
 	import DarSpaLogo from './darspa-logo.svg';
-	import EFicha from './eficha.png';
 	import DanielMorettiLogo from './daniel-moretti-logo.svg';
-	import OdontoFicha from './odontoficha.png';
 	import CaseStudyNewCard from './CaseStudyNewCard.svelte';
 	import { inview } from '$lib/util/inview';
 	import type { Options, ObserverEventDetails } from '$lib/types';
@@ -38,44 +34,44 @@
 			appType="Website"
 			cardDirection="Left"
 			srcLogo={BelenLogo}
-			srcBg={OdontologiaChacon}
+			srcBg="/images/odontologiachacon/odontologiachacon.png"
 			altBg="Landing page from odontologiabelenchacon.cl"
 			altLogo="Odontologia belen chacon Logo"
 			classColor="bg-indigo-500/90"
-			href="/odontologiachacon"
+			href="/showcase/odontologiachacon"
 		/>
 		<CaseStudyNewCard
 			appName="Dar Spa"
 			appType="Website"
 			cardDirection="Right"
 			srcLogo={DarSpaLogo}
-			srcBg={DarSpa}
+			srcBg="/images/darspa/darspa.png"
 			altBg="Landing page from darspa.cl"
 			altLogo="Dar Spa Logo"
 			classColor="bg-teal-500/90"
-			href="/darspa"
+			href="/showcase/darspa"
 		/>
 		<CaseStudyNewCard
 			appName="E-Ficha"
 			appType="Web Application"
 			cardDirection="Left"
 			srcLogo={DanielMorettiLogo}
-			srcBg={EFicha}
+			srcBg="/images/eficha/eficha.png"
 			altBg="Medical Administrator page from e-ficha"
 			altLogo="Daniel Moretti Logo"
 			classColor="bg-sky-500/90"
-			href="/e-ficha"
+			href="/showcase/e-ficha"
 		/>
 		<CaseStudyNewCard
 			appName="Odontoficha"
 			appType="Desktop Application"
 			cardDirection="Right"
 			srcLogo={DanielMorettiLogo}
-			srcBg={OdontoFicha}
+			srcBg="/images/odontoficha/odontoficha.png"
 			altBg="Medical Administrator Dashboard from odontoficha"
 			altLogo="Daniel Moretti Logo"
 			classColor="bg-indigo-500/90"
-			href="/odontoficha"
+			href="/showcase/odontoficha"
 		/>
 	</div>
 </section>

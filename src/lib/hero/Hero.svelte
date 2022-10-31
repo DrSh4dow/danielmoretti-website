@@ -2,10 +2,11 @@
 	import Button from '$lib/button/Button.svelte';
 	import { scrollToSection } from '$lib/util/scrollToSection';
 	import { tweened } from 'svelte/motion';
-	import { draw, scale, slide } from 'svelte/transition';
+	import { draw } from 'svelte/transition';
 	import { sineInOut, quintOut } from 'svelte/easing';
 	import { inview } from '$lib/util/inview';
 	import type { Options, ObserverEventDetails } from '$lib/types';
+
 	let isInView = false;
 	const options: Options = {
 		rootMargin: '-80px',
