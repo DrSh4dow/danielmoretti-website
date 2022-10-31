@@ -16,8 +16,8 @@
 <section
 	use:inview={options}
 	on:change={handleChange}
-	class="my-20 grid grid-cols-1 justify-between gap-10 transition-all delay-75 duration-700 sm:my-40 md:grid-cols-2  lg:mb-60 
-	{isInView ? 'translate-x-0 opacity-100 blur-0' : 'translate-x-10 opacity-0 blur-md'}"
+	class="my-20 grid grid-cols-1 justify-between gap-10 overflow-hidden transition-all delay-75 duration-700 sm:my-40 md:grid-cols-2  lg:mb-60 
+	{isInView ? 'translate-x-0 opacity-100 blur-0' : 'translate-x-4 opacity-0 blur-md'}"
 	id="about-me-section"
 >
 	<div>
