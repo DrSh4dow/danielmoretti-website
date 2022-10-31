@@ -20,6 +20,7 @@
 	export let appName: string;
 	export let cardDirection: 'Left' | 'Right';
 	export let classColor: string;
+	export let href: string = '.';
 </script>
 
 <article
@@ -29,14 +30,21 @@
     {isInView ? 'translate-y-0 opacity-100 blur-0' : '-translate-y-1 opacity-0 blur-md'}"
 >
 	{#if cardDirection === 'Left'}
-		<div class="relative max-h-60 overflow-hidden rounded-2xl shadow-md sm:max-h-[360px]">
+		<a
+			{href}
+			class="group relative block max-h-60 cursor-pointer overflow-hidden rounded-2xl shadow-md sm:max-h-[360px]"
+		>
 			<div
-				class="absolute top-0 left-0 flex h-full w-full items-center justify-center {classColor}"
+				class="absolute top-0 left-0 flex h-full w-full items-center justify-center transition-all duration-700 group-hover:bg-slate-500/10 {classColor}/90"
 			>
-				<img src={srcLogo} alt={altLogo} />
+				<img
+					class="opacity-100 blur-0 transition-all duration-500 group-hover:scale-125 group-hover:opacity-0 group-hover:blur-lg"
+					src={srcLogo}
+					alt={altLogo}
+				/>
 			</div>
 			<img src={srcBg} alt={altBg} />
-		</div>
+		</a>
 		<div class="hidden w-[520px] p-10 lg:block">
 			<h4 class="text-2xl font-black">{appType}</h4>
 			<h2 class="mb-4 font-inter text-4xl font-bold">{appName}</h2>
@@ -54,13 +62,20 @@
 				<Button>Case Study</Button>
 			</div>
 		</div>
-		<div class="relative max-h-[360px] overflow-hidden rounded-2xl shadow-md">
+		<a
+			{href}
+			class="group relative block max-h-[360px] cursor-pointer overflow-hidden rounded-2xl shadow-md"
+		>
 			<div
-				class="absolute top-0 left-0 flex h-full w-full items-center justify-center {classColor}"
+				class="absolute top-0 left-0 flex h-full w-full items-center justify-center transition-all duration-700 group-hover:bg-slate-500/10 {classColor}/90"
 			>
-				<img src={srcLogo} alt={altLogo} />
+				<img
+					class="opacity-100 blur-0 transition-all duration-500 group-hover:opacity-0 group-hover:blur-lg"
+					src={srcLogo}
+					alt={altLogo}
+				/>
 			</div>
 			<img src={srcBg} alt={altBg} />
-		</div>
+		</a>
 	{/if}
 </article>
