@@ -35,7 +35,7 @@
 			class="group relative block max-h-60 cursor-pointer overflow-hidden rounded-2xl shadow-md sm:max-h-[360px]"
 		>
 			<div
-				class="absolute top-0 left-0 flex h-full w-full items-center justify-center transition-all duration-700 group-hover:bg-slate-500/10 {classColor}/90"
+				class="absolute top-0 left-0 flex h-full w-full items-center justify-center transition-all duration-700 group-hover:bg-slate-500/10 {classColor}"
 			>
 				<img
 					class="opacity-100 blur-0 transition-all duration-500 group-hover:scale-125 group-hover:opacity-0 group-hover:blur-lg"
@@ -67,7 +67,7 @@
 			class="group relative block max-h-[360px] cursor-pointer overflow-hidden rounded-2xl shadow-md"
 		>
 			<div
-				class="absolute top-0 left-0 flex h-full w-full items-center justify-center transition-all duration-700 group-hover:bg-slate-500/10 {classColor}/90"
+				class="absolute top-0 left-0 flex h-full w-full items-center justify-center transition-all duration-700 group-hover:bg-slate-500/10 {classColor}"
 			>
 				<img
 					class="opacity-100 blur-0 transition-all duration-500 group-hover:opacity-0 group-hover:blur-lg"

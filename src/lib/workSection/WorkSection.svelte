@@ -41,7 +41,7 @@
 			srcBg={OdontologiaChacon}
 			altBg="Landing page from odontologiabelenchacon.cl"
 			altLogo="Odontologia belen chacon Logo"
-			classColor="bg-indigo-500"
+			classColor="bg-indigo-500/90"
 			href="/odontologiachacon"
 		/>
 		<CaseStudyNewCard
@@ -52,7 +52,7 @@
 			srcBg={DarSpa}
 			altBg="Landing page from darspa.cl"
 			altLogo="Dar Spa Logo"
-			classColor="bg-teal-500"
+			classColor="bg-teal-500/90"
 			href="/darspa"
 		/>
 		<CaseStudyNewCard
@@ -63,7 +63,7 @@
 			srcBg={EFicha}
 			altBg="Medical Administrator page from e-ficha"
 			altLogo="Daniel Moretti Logo"
-			classColor="bg-sky-500"
+			classColor="bg-sky-500/90"
 			href="/e-ficha"
 		/>
 		<CaseStudyNewCard
@@ -74,7 +74,7 @@
 			srcBg={OdontoFicha}
 			altBg="Medical Administrator Dashboard from odontoficha"
 			altLogo="Daniel Moretti Logo"
-			classColor="bg-indigo-500"
+			classColor="bg-indigo-500/90"
 			href="/odontoficha"
 		/>
 	</div>
