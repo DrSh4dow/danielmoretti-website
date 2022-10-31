@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Worker from './worker.gif';
+	import Worker from '/worker.gif';
 </script>
 
 <section class="flex h-screen items-center justify-center">

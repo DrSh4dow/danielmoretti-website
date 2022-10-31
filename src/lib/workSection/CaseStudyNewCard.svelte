@@ -32,6 +32,7 @@
 	{#if cardDirection === 'Left'}
 		<a
 			{href}
+			data-sveltekit-prefetch
 			class="group relative block max-h-60 cursor-pointer overflow-hidden rounded-2xl shadow-md sm:max-h-[360px]"
 		>
 			<div
@@ -64,6 +65,7 @@
 		</div>
 		<a
 			{href}
+			data-sveltekit-prefetch
 			class="group relative block max-h-[360px] cursor-pointer overflow-hidden rounded-2xl shadow-md"
 		>
 			<div

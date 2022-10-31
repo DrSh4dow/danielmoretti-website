@@ -93,7 +93,7 @@
 			>
 				{#if isInView}
 					<rect
-						transition:draw={{ duration: 1500, delay: 500, easing: quintOut }}
+						in:draw={{ duration: 1500, delay: 500, easing: quintOut }}
 						x="0.5"
 						y="0.5"
 						width="31"
