@@ -30,12 +30,15 @@
 	<div class="">
 		<WorkSlot
 			id={1}
-			keypoints={['Evaluate Junior and Senior Engineers']}
+			keypoints={[
+				'Help to analyze software engineering work and give feedback.',
+				'Worked and analyzed multiple codebases developed by engineers of different levels.'
+			]}
 			title="Software Engineer"
 			company="@ Woven Teams"
 			since="2022"
 			until="Present"
-			techStack="JS/TS | C# | Java | Slack"
+			techStack="JS/TS | C# | Java | Go | Slack"
 		/>
 		<WorkSlot
 			id={2}
@@ -44,17 +47,18 @@
 			since="2020"
 			until="2022"
 			keypoints={[
-				'Management of internal systems',
-				'Deployment of tooling and custom email server',
-				'Development and Design of their public-facing Website'
+				'Managed and maintained in-house systems.',
+				'Developed custom tooling and email server.',
+				'Developed and Designed the public-facing Website for Dar Spa. '
 			]}
 			techStack="Linux | Dovecot | Svelte | Node | Ngnix | Git"
 		/>
 		<WorkSlot
 			id={3}
 			keypoints={[
-				'Find and solve multiple vulnerabilities',
-				'Create tools for automation using Bash'
+				'Found multiple vulnerabilities and helped to fix them.',
+				'Crawl information disclosure through source code.',
+				'Created automation tools in Bash.'
 			]}
 			title="Bug Bounty Hunter"
 			company="@ HackerOne"
@@ -63,7 +67,11 @@
 			techStack="Burp Suite | Javascript | Networking | Bash"
 		/>
 		<WorkSlot
-			keypoints={['Construction of multiple web applications', 'Building of Medical Tooling']}
+			keypoints={[
+				'Developed and Designed multiple public-facing Websites for different kinds of clients.',
+				'Developed and Maintained Web Applications concerning healthcare administration.',
+				'Created custom in-house software.'
+			]}
 			techStack="Svelte | React | Typescript | Figma | Git"
 			id={4}
 			title="Freelance Web Developer"
