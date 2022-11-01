@@ -1,9 +1,0 @@
-<script lang="ts">
-	import UnderConstruction from '$lib/underConstruction/UnderConstruction.svelte';
-</script>
-
-<svelte:head>
-	<title>Odontoficha Case Study</title>
-</svelte:head>
-
-<UnderConstruction />

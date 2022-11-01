@@ -23,7 +23,9 @@
 		Want to work together <br />or have some inquiries?
 	</h3>
 	<div class="mb-10 flex items-center justify-center">
-		<Button>Send Message</Button>
+		<a href="mailto:daniel.morettiv@gmail.com">
+			<Button>Email Me</Button>
+		</a>
 	</div>
 	<div class="mb-20 flex justify-center">
 		<div class="flex items-center justify-center gap-4">

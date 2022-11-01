@@ -30,28 +30,6 @@
 	</div>
 	<div class="flex flex-wrap justify-center gap-10 lg:gap-20">
 		<CaseStudyNewCard
-			appName="Odontología Chacón"
-			appType="Website"
-			cardDirection="Left"
-			srcLogo={BelenLogo}
-			srcBg="/images/odontologiachacon/odontologiachacon.png"
-			altBg="Landing page from odontologiabelenchacon.cl"
-			altLogo="Odontologia belen chacon Logo"
-			classColor="bg-indigo-500/90"
-			href="/showcase/odontologiachacon"
-		/>
-		<CaseStudyNewCard
-			appName="Dar Spa"
-			appType="Website"
-			cardDirection="Right"
-			srcLogo={DarSpaLogo}
-			srcBg="/images/darspa/darspa.png"
-			altBg="Landing page from darspa.cl"
-			altLogo="Dar Spa Logo"
-			classColor="bg-teal-500/90"
-			href="/showcase/darspa"
-		/>
-		<CaseStudyNewCard
 			appName="E-Ficha"
 			appType="Web Application"
 			cardDirection="Left"
@@ -63,6 +41,36 @@
 			href="/showcase/e-ficha"
 		/>
 		<CaseStudyNewCard
+			appName="Odontología Chacón"
+			appType="Website"
+			cardDirection="Right"
+			srcLogo={BelenLogo}
+			srcBg="/images/odontologiachacon/odontologiachacon.png"
+			altBg="Landing page from odontologiabelenchacon.cl"
+			altLogo="Odontologia belen chacon Logo"
+			classColor="bg-indigo-500/90"
+			href="https://odontologiabelenchacon.cl"
+			buttonText="View Live"
+			isExternal
+			rel="noreferrer"
+			target="_blank"
+		/>
+		<CaseStudyNewCard
+			appName="Dar Spa"
+			appType="Website"
+			cardDirection="Left"
+			srcLogo={DarSpaLogo}
+			srcBg="/images/darspa/darspa.png"
+			altBg="Landing page from darspa.cl"
+			altLogo="Dar Spa Logo"
+			classColor="bg-teal-500/90"
+			href="https://darspa.cl"
+			buttonText="View Live"
+			isExternal
+			rel="noreferrer"
+			target="_blank"
+		/>
+		<CaseStudyNewCard
 			appName="Odontoficha"
 			appType="Desktop Application"
 			cardDirection="Right"
@@ -71,7 +79,11 @@
 			altBg="Medical Administrator Dashboard from odontoficha"
 			altLogo="Daniel Moretti Logo"
 			classColor="bg-indigo-500/90"
-			href="/showcase/odontoficha"
+			href="https://github.com/DrSh4dow/odontoficha-qt"
+			buttonText="View Repo"
+			isExternal
+			rel="noreferrer"
+			target="_blank"
 		/>
 	</div>
 </section>

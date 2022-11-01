@@ -21,6 +21,10 @@
 	export let cardDirection: 'Left' | 'Right';
 	export let classColor: string;
 	export let href: string = '.';
+	export let isExternal = false;
+	export let rel: string = '';
+	export let target: string = '';
+	export let buttonText: string = 'Case Study';
 </script>
 
 <article
@@ -32,7 +36,9 @@
 	{#if cardDirection === 'Left'}
 		<a
 			{href}
-			data-sveltekit-prefetch
+			{rel}
+			{target}
+			data-sveltekit-prefetch={isExternal ? 'off' : ''}
 			class="group relative block max-h-60 cursor-pointer overflow-hidden rounded-2xl shadow-md sm:max-h-[360px]"
 		>
 			<div
@@ -51,7 +57,9 @@
 			<h2 class="mb-4 font-inter text-4xl font-bold">{appName}</h2>
 			<h3 class="mb-10 text-2xl font-black text-slate-200">Design & Development</h3>
 			<div class="flex items-center justify-start">
-				<Button>Case Study</Button>
+				<a {href} {rel} {target} data-sveltekit-prefetch={isExternal ? 'off' : ''}>
+					<Button>{buttonText}</Button>
+				</a>
 			</div>
 		</div>
 	{:else}
@@ -60,12 +68,16 @@
 			<h2 class="mb-4 text-right font-inter text-4xl font-bold">{appName}</h2>
 			<h3 class="mb-10 text-right text-2xl font-black text-slate-200">Design & Development</h3>
 			<div class="flex items-center justify-end">
-				<Button>Case Study</Button>
+				<a {href} {rel} {target} data-sveltekit-prefetch={isExternal ? 'off' : ''}>
+					<Button>{buttonText}</Button>
+				</a>
 			</div>
 		</div>
 		<a
 			{href}
-			data-sveltekit-prefetch
+			{rel}
+			{target}
+			data-sveltekit-prefetch={isExternal ? 'off' : ''}
 			class="group relative block max-h-[360px] cursor-pointer overflow-hidden rounded-2xl shadow-md"
 		>
 			<div

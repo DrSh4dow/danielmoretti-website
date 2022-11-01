@@ -43,20 +43,22 @@
 		</p>
 	</div>
 	<div class="flex items-start justify-center md:justify-end md:pt-28">
-		<figure class="group relative w-60 p-4 transition-transform hover:scale-95 sm:w-96 sm:p-6">
-			<div class="absolute top-0 right-0">
-				<div class="w-14 border-t border-sky-500 sm:w-24" />
-				<div class="h-14 border-r border-sky-500 sm:h-24" />
-			</div>
-			<img
-				class="rounded-lg shadow-sm transition-transform group-hover:scale-110 "
-				src={Me}
-				alt="Daniel Moretti"
-			/>
-			<div class="absolute bottom-0 left-0">
-				<div class="h-14 border-l border-sky-500 sm:h-24" />
-				<div class="w-14 border-b border-sky-500 sm:w-24" />
-			</div>
-		</figure>
+		<div class="group">
+			<figure class=" relative w-60 p-4 transition-transform group-hover:scale-95 sm:w-96 sm:p-6">
+				<div class="absolute top-0 right-0">
+					<div class="w-14 border-t border-sky-500 sm:w-24" />
+					<div class="h-14 border-r border-sky-500 sm:h-24" />
+				</div>
+				<img
+					class="rounded-lg shadow-sm transition-transform group-hover:scale-110 "
+					src={Me}
+					alt="Daniel Moretti"
+				/>
+				<div class="absolute bottom-0 left-0">
+					<div class="h-14 border-l border-sky-500 sm:h-24" />
+					<div class="w-14 border-b border-sky-500 sm:w-24" />
+				</div>
+			</figure>
+		</div>
 	</div>
 </section>

@@ -33,21 +33,17 @@
 				data-sveltekit-prefetch>Portfolio</a
 			>
 			<a
-				class="mx-8 hidden text-xl font-bold text-slate-200/90 hover:text-slate-200 md:inline"
+				class="ml-8 hidden text-xl font-bold text-slate-200/90 hover:text-slate-200 md:inline"
 				href="/blog"
 				data-sveltekit-prefetch>Blog</a
 			>
-			<a
+			<!-- <a
 				class="hidden text-xl font-bold text-slate-200/90 hover:text-slate-200 md:inline"
 				href="/contact"
 				data-sveltekit-prefetch>Contact</a
-			>
+			> -->
 			<div class="mx-6 hidden h-8 border border-slate-200/5 sm:inline md:mx-8" />
-			<a
-				href="mailto:daniel.morettiv@gmail.com"
-				target="_blank"
-				class="group hidden cursor-pointer sm:inline"
-			>
+			<a href="mailto:daniel.morettiv@gmail.com" class="group hidden cursor-pointer sm:inline">
 				<svg
 					width="32"
 					height="32"
