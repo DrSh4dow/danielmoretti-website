@@ -1,9 +1,9 @@
 <script lang="ts">
-	import UnderConstruction from '$lib/underConstruction/UnderConstruction.svelte';
+	import CaseStudy from '$lib/caseStudy/CaseStudy.svelte';
 </script>
 
 <svelte:head>
 	<title>E-Ficha Case Study</title>
 </svelte:head>
 
-<UnderConstruction />
+<CaseStudy />

@@ -16,7 +16,7 @@
 	}
 </script>
 
-<section class="mb-28  md:mb-40 lg:mb-60">
+<section id="work-section" class="mb-28  md:mb-40 lg:mb-60">
 	<div
 		use:inview={options}
 		on:change={handleChange}
