@@ -13,8 +13,9 @@
 			<h3 class="select-none text-xl font-black">Daniel Moretti</h3>
 		</a>
 		<nav class="flex items-center ">
-			<svg
-				class="md:hidden"
+			<!-- <svg
+				class="cursor-pointer md:hidden"
+				on:click={() => (isOpen = true)}
 				width="32"
 				height="32"
 				viewBox="0 0 32 32"
@@ -26,7 +27,7 @@
 					fill="#E2E8F0"
 					fill-opacity="0.75"
 				/>
-			</svg>
+			</svg> -->
 			<a
 				class="hidden text-xl font-bold text-slate-200/90 hover:text-slate-200 md:inline"
 				href="/"
@@ -43,7 +44,7 @@
 				data-sveltekit-prefetch>Contact</a
 			> -->
 			<div class="mx-6 hidden h-8 border border-slate-200/5 sm:inline md:mx-8" />
-			<a href="mailto:daniel.morettiv@gmail.com" class="group hidden cursor-pointer sm:inline">
+			<a href="mailto:daniel.morettiv@gmail.com" class="group inline cursor-pointer">
 				<svg
 					width="32"
 					height="32"
@@ -60,7 +61,7 @@
 			<a
 				href="https://www.linkedin.com/in/dmorettiv"
 				target="_blank"
-				class="group mx-2 hidden cursor-pointer sm:inline md:mx-4"
+				class="group mx-2 inline cursor-pointer md:mx-4"
 				rel="noreferrer"
 			>
 				<svg
@@ -77,7 +78,7 @@
 				</svg>
 			</a>
 			<a
-				class="group hidden cursor-pointer sm:inline"
+				class="group inline cursor-pointer"
 				href="https://github.com/DrSh4dow"
 				target="_blank"
 				rel="noreferrer"

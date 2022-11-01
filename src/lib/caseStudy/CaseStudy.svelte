@@ -105,7 +105,7 @@
 			/>
 		</div>
 		<div>
-			<h5 class="mb-2 text-xl font-bold">Powerful scheduler with Google Calendar integration</h5>
+			<h5 class="mb-2 text-xl font-bold">Powerful scheduler plus Google Calendar integration</h5>
 			<img
 				class="rounded-lg shadow"
 				src="/images/eficha/scheduler.png"
