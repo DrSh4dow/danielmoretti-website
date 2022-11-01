@@ -77,7 +77,9 @@
 			</div>
 		</div>
 		<div class="mb-24 md:mb-36 lg:hidden">
-			<Button>Send Message</Button>
+			<a href="mailto:daniel.morettiv@gmail.com">
+				<Button>Email Me</Button>
+			</a>
 		</div>
 		<div class="mb-10 flex items-center justify-center ">
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
