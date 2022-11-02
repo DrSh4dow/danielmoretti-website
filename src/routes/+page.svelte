@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>Daniel Moretti's Portfolio</title>
+	<meta name="description" content="Daniel Moretti’s Portfolio showcases most of the work I have been doing and my career experience; it is powered by SvelteKit and TailwindCSS.">
 </svelte:head>
 
 <Hero />

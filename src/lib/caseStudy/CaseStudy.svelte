@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { leftArrowData } from './svgData';
-	import { fly, blur } from 'svelte/transition';
-	import { quintOut } from 'svelte/easing';
+	import { blur } from 'svelte/transition';
 	import Chip from '$lib/chip/Chip.svelte';
 
 	let techs = ['React', 'TypeScript', 'Express.js', 'HTML', 'CSS', 'GCP', 'Firebase'];
