@@ -6,9 +6,9 @@ First iteration of Daniel Moretti's Portfolio and Blog (WIP)
 
 SvelteKit + TailwindCSS + Vercel = ♥
 
-## Forking the Repo
+## Forking this Repo
 
-If you would like to fork the repo or use it as a base for your own work, go ahead, but remember to open-source your repo and mention me in some place:)
+If you would like to fork the repo or use it as a base for your own work, go ahead, but remember to open-source it and mention me in some place:)
 
 ```
                         __________
