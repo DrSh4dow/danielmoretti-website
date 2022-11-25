@@ -64,11 +64,7 @@
 			altBg="Landing page from darspa.cl"
 			altLogo="Dar Spa Logo"
 			classColor="bg-teal-500/90"
-			href="https://darspa.cl"
-			buttonText="View Live"
-			isExternal
-			rel="noreferrer"
-			target="_blank"
+			href="/showcase/darspa"
 		/>
 		<CaseStudyNewCard
 			appName="Odontoficha"

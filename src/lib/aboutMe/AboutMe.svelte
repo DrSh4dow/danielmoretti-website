@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Me from './me.png';
+	import Me from './me.jpg';
 	import { inview } from '$lib/util/inview';
 	import type { Options, ObserverEventDetails } from '$lib/types';
 	let isInView = false;

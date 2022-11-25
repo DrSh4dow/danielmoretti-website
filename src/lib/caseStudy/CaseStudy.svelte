@@ -3,15 +3,57 @@
 	import { leftArrowData } from './svgData';
 	import { blur } from 'svelte/transition';
 	import Chip from '$lib/chip/Chip.svelte';
+	import Button from '$lib/button/Button.svelte';
 
-	let techs = ['React', 'TypeScript', 'Express.js', 'HTML', 'CSS', 'GCP', 'Firebase'];
+	export let techs = ['React', 'TypeScript', 'Express.js', 'HTML', 'CSS', 'GCP', 'Firebase'];
+	export let title = 'E-Ficha';
+	export let appType = ['Web', 'Application'];
+	export let mockupSrc = '/images/eficha/mockup.png';
+	export let mockupAlt = 'mockup of e-ficha web application';
+	export let techClass = 'bg-indigo-600';
+	export let liveUrl = '';
+	export let hasLiveVersion = false;
+	export let description =
+		'This project empowers doctors to have all the tools they need ranging from medical history, patient administration, scheduler, recipe generation, statistical generation, and AI-assisted writing in one place and with multi-platform support.';
+	export let extraPictures: {
+		header: string;
+		src: string;
+		alt: string;
+	}[] = [
+		{
+			header: 'Intuitive UI for patient-management',
+			src: '/images/eficha/patients.png',
+			alt: 'patients dashboard'
+		},
+		{
+			header: 'Multiline autocompletion inspired by Intellisense',
+			src: '/images/eficha/autocompletion.png',
+			alt: 'patients creation page showing autocompletion capabilities'
+		},
+		{
+			header: 'Straightforward UI with a utility-first approach for doctors',
+			src: '/images/eficha/medhistory.png',
+			alt: 'medical history management'
+		},
+		{
+			header: 'Recipe generation with on-the-fly pdf rendering',
+			src: '/images/eficha/recipe.png',
+			alt: 'on-the-fly pdf rendering'
+		},
+		{
+			header: 'Powerful scheduler plus Google Calendar integration',
+			src: '/images/eficha/scheduler.png',
+			alt: 'Scheduler for e-ficha'
+		},
+		{
+			header: 'Themes can never be left out &#10084;',
+			src: '/images/eficha/themes.png',
+			alt: 'theming'
+		}
+	];
 	let isMounted = false;
 
 	onMount(() => (isMounted = true));
-
-	function handleChange({ detail }: CustomEvent<ObserverEventDetails>) {
-		isMounted = detail.inView;
-	}
 </script>
 
 <div class="absolute top-0 -z-10 hidden h-screen w-screen backdrop-blur-2xl lg:-left-10 lg:block" />
@@ -38,83 +80,55 @@
 		<div class="mb-10 grid sm:mb-20 lg:grid-cols-2">
 			<div class="lg:pt-4">
 				<h3 class="text-2xl font-black sm:mb-1">
-					{#each ['Web', ' Application'] as word, i}
+					{#each appType as word, i}
 						<span in:blur={{ amount: 10, delay: 300 * (i + 1) }}>{word}</span>
 					{/each}
 				</h3>
-				<h1 in:blur={{ amount: 10, delay: 900 }} class="font-inter text-7xl font-bold sm:text-8xl">
-					E-Ficha
+				<h1
+					in:blur={{ amount: 10, delay: 900 }}
+					class={`font-inter text-7xl font-bold sm:text-8xl ${
+						hasLiveVersion ? 'mb-6 lg:mb-10' : ''
+					}`}
+				>
+					{title}
 				</h1>
+				{#if hasLiveVersion}
+					<a in:blur={{ amount: 10, delay: 1200 }} href={liveUrl} rel="noreferrer" target="_blank">
+						<Button>View Live</Button>
+					</a>
+				{/if}
 			</div>
 			<img
 				in:blur={{ amount: 10, delay: 1200 }}
 				class="hidden lg:inline"
-				src="/images/eficha/mockup.png"
-				alt="mockup of e-ficha web application"
+				src={mockupSrc}
+				alt={mockupAlt}
 			/>
 		</div>
 		<div in:blur={{ amount: 10, delay: 1200 }} class="grid gap-5 sm:gap-10 lg:grid-cols-2">
 			<div>
 				<h5 class="mb-2 text-2xl font-black sm:mb-6">Project Overview</h5>
 				<p class="max-w-lg text-lg text-slate-200">
-					This project empowers doctors to have all the tools they need ranging from medical
-					history, patient administration, scheduler, recipe generation, statistical generation, and
-					AI-assisted writing in one place and with multi-platform support.
+					{description}
 				</p>
 			</div>
 			<div>
 				<h5 class="mb-2 text-2xl font-black sm:mb-6">Tech & Tools Used</h5>
 				<div class="flex max-w-md flex-wrap gap-2">
 					{#each techs as tech, i}
-						<Chip index={i}>{tech}</Chip>
+						<Chip chipClass={techClass} index={i}>{tech}</Chip>
 					{/each}
 				</div>
 			</div>
 		</div>
 	</section>
 	<section in:blur={{ amount: 10, delay: 1500 }} class="mb-10 flex flex-wrap gap-10">
-		<div>
-			<h5 class="mb-2 text-xl font-bold">Intuitive UI for patient-management</h5>
-			<img class="rounded-lg shadow" src="/images/eficha/patients.png" alt="patients dashboard" />
-		</div>
-		<div>
-			<h5 class="mb-2 text-xl font-bold">Multiline autocompletion inspired by Intellisense</h5>
-			<img
-				class="rounded-lg shadow"
-				src="/images/eficha/autocompletion.png"
-				alt="patients creation page showing autocompletion capabilities"
-			/>
-		</div>
-		<div>
-			<h5 class="mb-2 text-xl font-bold">
-				Straightforward UI with a utility-first approach for doctors
-			</h5>
-			<img
-				class="rounded-lg shadow"
-				src="/images/eficha/medhistory.png"
-				alt="medical history management"
-			/>
-		</div>
-		<div>
-			<h5 class="mb-2 text-xl font-bold">Recipe generation with on-the-fly pdf rendering</h5>
-			<img
-				class="rounded-lg shadow"
-				src="/images/eficha/recipe.png"
-				alt="on-the-fly pdf rendering"
-			/>
-		</div>
-		<div>
-			<h5 class="mb-2 text-xl font-bold">Powerful scheduler plus Google Calendar integration</h5>
-			<img
-				class="rounded-lg shadow"
-				src="/images/eficha/scheduler.png"
-				alt="Scheduler for e-ficha"
-			/>
-		</div>
-		<div>
-			<h5 class="mb-2 text-xl font-bold">Themes can never be left out &#10084;</h5>
-			<img class="rounded-lg shadow" src="/images/eficha/themes.png" alt="theming" />
-		</div>
+		{#each extraPictures as { header, src, alt }}
+			<div>
+				<h5 class="mb-2 text-xl font-bold">{header}</h5>
+				<img class="rounded-lg shadow" {src} {alt} />
+			</div>
+		{/each}
 	</section>
 
 	<h5 class="text-center text-xs font-black text-slate-200/20 sm:text-lg">
