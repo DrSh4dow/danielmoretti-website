@@ -1,10 +1,10 @@
 # Daniel Moretti's Portfolio and Blog
 
-First iteration of Daniel Moretti's Portfolio and Blog (WIP)
+First iteration of Daniel Moretti's Portfolio and Blog
 
 ## Tech Stack
 
-SvelteKit + TailwindCSS + Vercel = ♥
+SvelteKit + TailwindCSS + Prismic + Vercel = ♥
 
 ## Forking this Repo
 
