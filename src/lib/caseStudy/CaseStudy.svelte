@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { leftArrowData } from './svgData';
+	import { leftArrowData } from '$lib/util/constants';
 	import { blur } from 'svelte/transition';
 	import Chip from '$lib/chip/Chip.svelte';
 	import Button from '$lib/button/Button.svelte';
