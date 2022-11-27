@@ -8,6 +8,11 @@
 
 <svelte:head>
 	<title>Daniel Moretti's Blog</title>
+	<meta
+		name="description"
+		content=""
+	/>
+	<link rel="canonical" href="https://danielmoretti.com/blog" />
 </svelte:head>
 
 <h1

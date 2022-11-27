@@ -1,6 +1,7 @@
 import { error } from '@sveltejs/kit';
 import { months } from '$lib/util/constants';
 import * as prismic from '@prismicio/client';
+export const prerender = true;
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
