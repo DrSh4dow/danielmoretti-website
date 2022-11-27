@@ -42,7 +42,7 @@
 		</p>
 	</div>
 	<div
-		class="[&>*]:text-lg [&>*]:text-slate-200 [&>ul]:-mt-10 [&>ul]:list-disc  [&>ul]:px-8 [&>p]:mb-16 [&>h3]:mb-2 [&>h3]:text-xl [&>h3]:font-bold [&>h3]:text-slate-50  [&>h2]:mb-2  [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-slate-50 [&>h1]:mb-2 [&>h1]:text-3xl [&>h1]:font-bold [&>h1]:text-slate-50 [&>h6]:px-1 [&>h6]:text-sm [&>h6]:italic [&>h6]:text-slate-400 [&>pre]:-mt-10 [&>pre]:mb-6 [&>pre]:rounded-xl [&>pre]:bg-black [&>pre]:p-4 [&>pre]:text-base [&>pre]:text-green-500"
+		class="[&>*]:text-lg [&>*]:text-slate-200 [&>ul]:-mt-10 [&>ul]:mb-6 [&>ul]:list-disc [&>ul]:px-8 [&>p]:mb-16 [&>h3]:mb-2 [&>h3]:text-xl [&>h3]:font-bold [&>h3]:text-slate-50 [&>h2]:mb-2 [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:text-slate-50 [&>h1]:mb-2 [&>h1]:text-3xl [&>h1]:font-bold [&>h1]:text-slate-50 [&>h6]:px-1 [&>h6]:text-sm [&>h6]:italic [&>h6]:text-slate-400 [&>pre]:-mt-10 [&>pre]:overflow-x-scroll [&>pre]:mb-6 [&>pre]:rounded-xl [&>pre]:bg-black [&>pre]:p-4 [&>pre]:text-base [&>pre]:text-green-500"
 	>
 		{@html prismicH.asHTML(data.document.data.body)}
 	</div>
