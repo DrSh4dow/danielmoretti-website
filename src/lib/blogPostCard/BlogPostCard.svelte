@@ -12,7 +12,7 @@
 				class="absolute -inset-y-6 -inset-x-4 z-0 scale-95 bg-slate-800 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"
 			/>
 			<div class="inline">
-				<a href={`/blog/${url}`} data-sveltekit-prefetch>
+				<a href={`/blog/${url}`} data-sveltekit-preload-data>
 					<span class="absolute -inset-y-6 -inset-x-4 z-20 sm:-inset-x-6 sm:rounded-2xl" />
 					<span class="relative z-10">{title}</span>
 				</a>

@@ -11,7 +11,7 @@
 
 <article class="mb-20 max-w-screen-md pt-16 sm:pt-20">
 	<div class="flex w-full py-10">
-		<a href="/blog" data-sveltekit-prefetch>
+		<a href="/blog" data-sveltekit-preload-data>
 			<svg
 				class="cursor-pointer"
 				width="52"

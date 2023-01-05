@@ -35,8 +35,7 @@
 			src: '/images/eficha/medhistory.png',
 			alt: 'medical history management'
 		},
-		{
-			header: 'Recipe generation with on-the-fly pdf rendering',
+		{ header: 'Recipe generation with on-the-fly pdf rendering',
 			src: '/images/eficha/recipe.png',
 			alt: 'on-the-fly pdf rendering'
 		},
@@ -63,7 +62,7 @@
 			class="absolute -top-64 -left-20 -z-20 hidden h-[800px] w-96 -rotate-[30deg] rounded-full bg-gradient-radial lg:inline"
 		/>
 		<div class="flex w-full py-10">
-			<a in:blur={{ amount: 10 }} href="/#work-section" data-sveltekit-prefetch>
+			<a in:blur={{ amount: 10 }} href="/#work-section" data-sveltekit-preload-data>
 				<svg
 					class="cursor-pointer"
 					width="52"
@@ -125,7 +124,7 @@
 	<section in:blur={{ amount: 10, delay: 1500 }} class="mb-10 flex flex-wrap gap-10">
 		{#each extraPictures as { header, src, alt }}
 			<div>
-				<h5 class="mb-2 text-xl font-bold">{header}</h5>
+				<h5 class="mb-2 text-xl font-bold">{@html header}</h5>
 				<img class="rounded-lg shadow" {src} {alt} />
 			</div>
 		{/each}

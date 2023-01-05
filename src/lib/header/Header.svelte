@@ -31,17 +31,17 @@
 			<a
 				class="hidden text-xl font-bold text-slate-200/90 hover:text-slate-200 md:inline"
 				href="/"
-				data-sveltekit-prefetch>Portfolio</a
+				data-sveltekit-preload-data>Portfolio</a
 			>
 			<a
 				class="ml-8 hidden text-xl font-bold text-slate-200/90 hover:text-slate-200 md:inline"
 				href="/blog"
-				data-sveltekit-prefetch>Blog</a
+				data-sveltekit-preload-data>Blog</a
 			>
 			<!-- <a
 				class="hidden text-xl font-bold text-slate-200/90 hover:text-slate-200 md:inline"
 				href="/contact"
-				data-sveltekit-prefetch>Contact</a
+				data-sveltekit-preload-data>Contact</a
 			> -->
 			<div class="mx-6 hidden h-8 border border-slate-200/5 sm:inline md:mx-8" />
 			<a href="mailto:daniel.morettiv@gmail.com" class="group inline cursor-pointer">
